@@ -1,0 +1,27 @@
+FUNCTIONS - Block of reusable code which takes input and gives output 
+
+syntax - returnType functionName(type arg1, type arg2..){
+    //operations
+}
+void return type -> no return
+
+Question 1 print a given name in a function 
+
+code - import java.util.*;
+
+public class functions {
+    public static void printMyName(String name){
+        System.out.println(name);
+        return;
+    }
+
+    public static void main(String args[]{
+        Scanner sc = new Scanner(System.in);
+        String name = sc.next;
+
+        printMyName(name);
+    })
+}
+
+
+

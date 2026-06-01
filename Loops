@@ -1,0 +1,170 @@
+//for loop = for(initialisation; condition; updation) it also first check the condition and then execute
+
+public class Loops{
+    public static void main(String args[]{
+        for (int i =0; i < 100; i = i +1){
+            System.out.println("Ishu")
+        }
+    })
+}
+
+public class loop{
+    public static void main(String args[]){
+        for (int c = 0; c < 100; c = c + 1){
+            System.out.println(c);
+        }
+    }
+}
+
+//print no from 0 to 10
+
+public class loop{
+    public static void main(String args[]){
+        for (int i  = 0; i <= 10; i++){
+            System.out.print(i+" ");
+        }
+    }
+}
+
+//while loop it first check the condition and then execute
+public class loop{
+    public static void main(String args[]){
+        int i = 0;
+        while (i<11){
+          System.out.println(i);
+          i = i+1; //i++; 
+        }
+        
+    }
+}
+
+//do while loop  execute atleast one it first execute and then check the condition
+public class loop{
+    public static void main(String args[]){
+        int i = 0;
+        do{
+        System.out.println(i);
+        i = i+1;
+        } while(i<101);
+        
+    }
+}
+
+sum of n natural number
+import java.util.*;
+
+import java.util.*;
+
+public class loop{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        
+        
+        int sum = 0;
+        for (int i =0; i<=n; i++){
+          sum = sum + i;
+        }
+        System.out.print(sum);
+        sc.close();
+    }
+}
+
+//print the table of a number
+
+import java.util.*;
+
+
+public class loop{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        
+        for (int i =1; i<11; i++){
+          System.out.println(n*i);
+          
+        }        
+        sc.close();
+    }
+}
+
+//print all even numbers till n
+import java.util.*;
+
+
+public class loop{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        
+        for (int i =0; i<100; i++){
+          if (i%2==0){
+            System.out.println(i++);
+          }
+        }        
+        sc.close();
+    }
+}
+
+
+//practice questions
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+      int i;
+      int b;
+      
+      do {
+        System.out.println("Enter 1 to check marks or 0 to exit");
+        i = sc.nextInt();
+        if(i == 1){
+          System.out.println("enetr Marks");
+          b = sc.nextInt();
+          
+          if(b>90){
+            System.out.println("good");
+          }else if (b>60){
+            System.out.println("also good");
+          }else{
+            System.out.println("Average");
+          }
+          
+        }else if (i == 0){
+          System.out.println("ended");
+      }
+        else{
+          System.out.println("Ivalid input");
+        }
+      }while (i != 0);
+      sc.close();
+    }
+}
+
+//prime or not
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+      int n = sc.nextInt();
+      Boolean isPrime = true;
+      for(int i=2; i<=n/2; i++){
+         if(n % i == 0){
+           isPrime = false;
+           break;
+        }
+      }
+     if(isPrime){
+       if (n ==1){
+         System.out.println("no prime no composite");
+       }else {
+         System.out.println("prime no");
+       }
+     }else {
+       System.out.println("not a prime number");
+     }
+    }
+}
+
