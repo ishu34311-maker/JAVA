@@ -1,50 +1,51 @@
 import java.util.Scanner;
 
 public class test {
-  public static void main(String[] args){
-
+  public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
 
+   /*int arr[] = {10,20,30,40,50};
+    int sum = 0;
+    int n = arr.length;
 
-    String name;
-    int age;
-    boolean isStudent;
-
-    System.out.print("Enter your name: ");
-    name = sc.nextLine();
-    System.out.print("Enter your age: ");
-    age = sc.nextInt();
-    System.out.print("Are you a student ? (true/ false): ");
-    isStudent = sc.nextBoolean();
-
-    if (name.isEmpty()) {
-      System.out.println("You didnt enter you name: ");
+    for(int i =0; i< n; i++){
+      int value  = arr[i];
+      sum = sum + value;
     }
-    else{
-      System.out.println("Hello "+ name + "!!");
+    System.out.println(sum);  
 
-    }
+    int bhum[] ={2,3,10,20};
+    int ishu =1;
+    int n = bhum.length;
 
-    if (age >= 65) {
-      System.out.println("You are a senior!");
+    for(int i =0; i<n; i++){
+      int value = bhum[i];
+      ishu = ishu * value;
     }
-    else if (age >= 18) {
-      System.out.println("You are adult!");
-    }
-    else if (age < 0) {
-      System.out.println("You haven't been born yet");
-      } else if(age == 0){
-        System.out.println("You are a baby! ");
+    System.out.println(ishu);
+
+    //find maximum value in array
+    int arr[] ={21, 3, 50, 4};
+    int largest = arr[0];
+    int n = arr.length;
+
+    for(int i = 0; i < n; i++){
+      if (largest < arr[i]) {
+        largest = arr[i];
       }
+    }
+     System.out.println("Your largest number is : " + largest);*/
+      int arr[] ={21, 3, 50, 4};
+    int min = arr[0];
+    int n = arr.length;
 
-      if (isStudent) {
-        System.out.println("You are a student");
+     for(int i = 0; i < n; i++){
+      if (min > arr[i]) {
+        min = arr[i];
       }
-      else{
-        System.out.println("you are not a student");
-      }
+    }
+     System.out.println("Your min number is : " + min);
+  
 
-
-    sc.close();
   }
 }

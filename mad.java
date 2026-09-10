@@ -20,7 +20,7 @@ public class mad {
         verb1 = sc.nextLine();
 
          
-        System.out.println("\nSamay raina is a " + adjective1 + " comedian but people call him and his comedy " + adjective2);
+        System.out.println("\nSaumil is a " + adjective1 + " comedian but people call him and his comedy " + adjective2);
         System.out.println(noun1 + " is the " + adjective2 + " person in his whole friend circle");
         System.out.println(noun1 + " was " + verb1 + " while his friends are learning.");
 
